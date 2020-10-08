@@ -11,7 +11,7 @@ public class DemoController {
 	private String sameConfig;
 	@Value("${env.config}")
 	private String envConfig;
-	@Value("${sabir}")
+	@Value("${name}")
 	private String javaHome;
 	
 	@GetMapping("/test")
