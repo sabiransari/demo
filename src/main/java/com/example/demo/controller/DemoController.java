@@ -11,9 +11,14 @@ public class DemoController {
 	private String sameConfig;
 	@Value("${env.config}")
 	private String envConfig;
+	@Value("${sabir}")
+	private String javaHome;
 	
 	@GetMapping("/test")
 	public String test() {
-		return "same configuration: " + sameConfig + "\nenv config" + envConfig;
+		return "\nsame configuration: " + sameConfig + 
+				"\nenv config: " + envConfig + 
+				"\njava home: " + javaHome;
+		
 	}
 }
